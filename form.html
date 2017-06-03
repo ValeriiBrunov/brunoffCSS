@@ -1,0 +1,324 @@
+<!DOCTYPE html>
+<html>
+  	<head>
+
+  		<!-- Meta -->
+	    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+	    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0" />
+
+        <!-- Title -->
+	    <title>Интернет аукцион brubay.ru</title>
+
+	    <!-- Link -->
+	    <link href="brunoff.css" type="text/css" rel="stylesheet" media="screen,projection" />
+
+  	</head>
+  	<body>
+
+<style type="text/css">
+	input[type="text"],
+	input[type="password"],
+	select {
+		height: 25px;
+		width: 100%;
+		line-height: 25px;
+		border: 1px solid #BFBFBF;
+		border-radius: 3px;
+		-webkit-border-radius: 3px;
+		-moz-border-radius: 3px;
+		-khtml-border-radius: 3px;
+		box-shadow: inset 0px 0px 1px 0px #A1FF3A;
+		background-color: #FFFFFF;
+		padding-left: 8px;
+		padding-right: 8px;
+		font-size: 16px;
+		overflow: hidden;
+		position: relative;
+		font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+		text-align: left;
+		vertical-align: middle;
+		cursor: pointer;
+	}
+	input[type="text"].form-small,
+	input[type="password"].form-small {
+		width: 50px;
+	}
+	input[type="text"].form-average,
+	input[type="password"].form-average {
+		width: 100px;
+	}
+	input[type="text"].form-average-2,
+	input[type="password"].form-average-2 {
+		width: 150px;
+	}
+	input[type="text"].form-big,
+	input[type="password"].form-big {
+		width: 250px;
+	}
+	/* Поле в фокусе. */
+	input[type="text"]:focus,
+	input[type="password"]:focus,
+	input[type="text"]:hover,
+	input[type="password"]:hover,
+	select:hover,
+	select:focus {
+    	outline: 0;
+    	outline-offset: 0;
+		border: 1px solid green;
+		box-shadow: 0 0 1px 1px rgba(122,122,122,0.4);
+	}
+	/* Горизонтальное расположение текста и формы. */
+	ul.vertical-form {
+		margin: 5px;
+	}
+	ul.vertical-form li {
+		margin-bottom: 3px;
+	}
+	li.label {
+		margin-bottom: 0px;
+		font-size: 10px;
+	}
+	/* Текст с выделением внутри формы. */
+	input[type="text"].figures-form:disabled {
+		width: 18px;
+		border: none;
+		border-right: 1px solid #BFBFBF;
+		border-radius: 3px 0 0 3px;
+		background-color: #DCDCDC;
+		color: #000;
+		margin-right: -40px;
+		z-index: 100;
+	}
+	input[type="text"].figures-form:hover {
+		box-shadow: none;
+	}
+	input[type="text"].figures-text-form {
+		padding-left: 38px;
+	}
+
+	/* Выпадающие списки. */
+	select {
+		padding: 4px;
+		padding-top: 2px;
+		height: 30px;
+		-moz-appearance: none;
+        -webkit-appearance: none;
+        appearance: none;
+        -o-appearance:none;
+        -khtml-appearance:none;
+        overflow:hidden;
+	}
+	select::-ms-expand {  /* для IE */ 
+    	display: none;
+	}
+	input[type="text"].figures-select-form:disabled {
+		height: 25px;
+		line-height: 19px;
+		width: 5px;
+		background-color: #FFF;
+		background-image: url(data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAABIAAAAYCAYAAAD3Va0xAAAABHNCSVQICAgIfAhkiAAAAAlwSFlzAAAOxAAADsQBlSsOGwAAAMxJREFUOI1j/P///38GKgAmahjCwMDAwAJj3H3wlDoGMTAwMCgrSJNlyIrlq1ENYmBgYHjz6h1ZhlEtjEYNIgwwYo2BgYGB4f9PhjePnzJ8/I0j0TNxMIjKSjPwIenGbhAjA8OXY00MPvmbGd5gmsKgmbWWYUOtNJooVsDOoBAxk2H7RF8GEayG2DEIoenEE0bohuE2hIEBl9fQDWPiZ6i/G8LQX26L1RAiDIIaFjaRYSEBVYMvHY0aRBigRP+K5aspN2jlihUUuIeBAQA5LzCqUu60RAAAAABJRU5ErkJggg==);
+		background-repeat: no-repeat;
+		border: none;
+		border-right: 1px solid #FFF;
+		border-radius: 0px 0px 3px 0px;
+		box-shadow: inset 0px 0px 2px 2px #FFF;
+		margin-right: 0px;
+		margin-left: -23px;
+		margin-top: 2px;
+	}
+	
+	/* Радио-кнопки. */
+	.radio-form {
+		width: 28px;
+	    height: 18px;
+	    display: block;
+	    background-image: url(data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAABIAAAAkCAYAAACE7WrnAAAABHNCSVQICAgIfAhkiAAAAAlwSFlzAAAOxAAADsQBlSsOGwAAAJpJREFUSIntlOEKgCAMhG/Re6tPfv0Kank2xSCog/64eX1sc0aSmKBVBUop1fOUUsxoN1AXZJwH5ZwZlc+FCvSaLapG3Rql8VTTiH6jgN45RyNUPtfI8xoZfbQXI3/BS/1AGvVqWrH/DXlvJmsEAGbm6XWyogFQ/RRVtf2eJBJ73z561qjVHRlrzRGCHbudo+bcKCJFpfShDbkB9ODdw9vRqucAAAAASUVORK5CYII=);
+	    background-repeat: no-repeat;
+	    cursor: pointer;
+	    float: left;
+	}
+	input[type="radio"]:checked + label {
+	    background-position: 0 -18px;
+	}
+	input[type="radio"] {
+    	display:none;
+	}
+
+	/* Чекбоксы. */
+	.checkbox-form {
+	    width: 28px;
+	    height: 16px;
+	    display: block;
+	    background-image: url(data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAABIAAAAgCAYAAAAffCjxAAAABHNCSVQICAgIfAhkiAAAAAlwSFlzAAAOxAAADsQBlSsOGwAAAmVJREFUSImtlc9LVFEUxz/3vRlJiaFczaaF46Rj46JGgygNAgliIFpFSVE7oU3SQvoDBBci9B+0cRMhQxGau5qpIZRHEMwisEeOCK/NkBpq5nu3xfie77cjeOHOnPfOvZ/7PeeeOSOklJITGAnbKJVKVCoVjsPN5XKMjY15QZqmkUqlyGazLUEMw6BWqwUVAaTTaYrFovMspUQIEQqqVqvU63XnWYk71Ya0Em4syA88NshWIKX0TL86t53AN9x58Svx58xtBxTFhRHnC1Xk32wriUt6qKKok+N8AUXuTWEK3b5YUFRoUdAASAiBYRjMz89HLnYPwzDCQYVCgUqlgqZpLYEA8vm8Y4uTaiMt/URaGU5od969ZmH9J63KSwjB076LTA2PeBW9XdPZsyz+BaYZ8s5ixzSZ1b87YAcUrSRYM6dUFQDLld6jc+S7i4eZXl5dv0Uq2eZ5fzTIVcX3us4zPTjEr91t9iwzAnRwsmpvtJUcfD/qzjEzOMzc6grjS2V2zSiQEKTbO3h5bYSu0ymc3AjB/a4epgpXeb++yrPlT2zv7weEe0LrUBP0pM5QulHkwtlOAB539/Hi8jBzqz948uUDf30hhYL0rQ1Gy4tYUjI7dJPn/QNMXrpCqa4zoX1uQiSE3bE32UKg/9nk7scF9iyTif4B3qzpjC+V2THtcMILxddGmotWNn8zWl5kNNPLTO0ru5YZCYgAHa7XtzaY/LbcvDXnJqNBTmjC/hTCW8xOHQV9Sti/yO1zGdoUhaSikFRUkqp6YPtn09euqjzI9B6e12g0nJbk7tP+nh3l6+xslsl/wicUuuW4+h4AAAAASUVORK5CYII=);
+	    background-repeat: no-repeat;
+	    cursor: pointer;
+	    float: left;
+	}
+	input[type="checkbox"]:checked + label {
+	    background-position: 0 -16px;
+	}
+	input[type="checkbox"] {
+    	display:none;
+	}
+
+	/* Кнопки. */
+
+
+
+
+.mmm {margin: 20px;}
+.t {border: 1px solid black; padding: 20px;}
+
+</style>
+
+		<div class="row" style="margin-top: 10px;">
+			<div class="cell-6 mmm">
+				Текст жирный перед формой:
+			</div>
+		</div>
+
+		<div class="row">
+			<div class="cell-6 mmm t">
+
+				<!-- Форма и текст в одну строку. -->
+				<span class="bold-text" >Жирно</span>
+				<input type='text' name='iii' class="form-big">
+
+			</div>
+		</div>
+
+		<div class="row" style="margin-top: 40px;">
+			<div class="cell-6 mmm">
+				Текст не жирный (нормальный) перед формой:
+			</div>
+		</div>
+
+		<div class="row">
+			<div class="cell-6 mmm t">
+
+				Нормально
+				<input type='text' name='iii' class="form-small">
+
+			</div>
+		</div>
+
+		<div class="row">
+			<div class="cell-6 mmm">
+				<!-- Текс и форма на разных уровнях. -->
+				<ul class="vertical-form">
+					<li>Пароль</li>
+					<li><input type='password' name='iii' placeholder=""></li>
+					<li class="label">qqqqq</li>
+				</ul>
+			</div>
+		</div>
+
+		<div class="row">
+			<div class="cell-6 mmm">
+
+				<!-- Телефонный номер -->
+				<div style="padding-left: 10px;">
+					<input type="text" name="tel" value="+7" class="figures-form" disabled>
+					<input type="text" name="tel2" class="figures-text-form form-average-2" value="(___)___-__-__" maxlength="10">
+				</div>
+
+			</div>
+		</div>
+		
+		<div class="row" style="margin-top: 40px;">
+			<div class="cell-6 mmm">
+				Выпадающий список.
+			</div>
+		</div>
+		
+		<div class="row">
+			<div class="cell-6 mmm">
+
+				<!-- Выпадающий список. -->
+				<select class="vertical-left" name="select" size="1">
+					<option value="" hidden disabled selected>Выбрать</option>
+					<option>123wwww</option>
+					<option>eeddfg</option>
+					<option>eeeeee</option>
+					<option>gbvvvffff</option>
+				</select>
+				<input type="text" name="tel" value="" class="figures-form figures-select-form" disabled>
+
+			</div>
+		</div>
+
+		<div class="row">
+			<div class="cell-6 mmm">
+
+				<!-- Выпадающий список. -->
+				<select class="vertical-left" name="select" size="1" style="width: 100px;">
+					<option value="" hidden disabled selected>Выбрать</option>
+					<option>123wwww</option>
+					<option>eeddfg</option>
+					<option>eeeeee</option>
+					<option>gbvvvffff</option>
+				</select>
+				<input type="text" name="tel" value="" class="figures-form figures-select-form" disabled>
+
+			</div>
+		</div>
+		
+		<div class="row" style="margin-top: 40px;">
+			<div class="cell-6 mmm">
+				Радио-кнопки.
+			</div>
+		</div>
+		
+		<div class="row">
+			<div class="cell-6 mmm">
+
+				<div class="row">
+					<input type="radio" value="1" id="r" name="t"><label for="r" class="radio-form"></label>
+					eeeee
+				</div>
+				
+				<div class="row">
+					<input type="radio" value="1" id="r2" name="t"><label for="r2" class="radio-form"></label>
+					eeeee
+				</div>
+
+			</div>
+		</div>
+
+		<div class="row" style="margin-top: 40px;">
+			<div class="cell-6 mmm">
+				Чекбоксы.
+			</div>
+		</div>
+
+		<div class="row">
+			<div class="cell-6 mmm">
+
+				<div class="row">
+					<input type="checkbox" value="1" id="k" "><label for="k" class="checkbox-form"></label>
+					eeeee
+				</div>
+				<div class="row">
+					<input type="checkbox" value="1" id="k2" "><label for="k2" class="checkbox-form"></label>
+					eeeee
+				</div>
+				<div class="row">
+					<input type="checkbox" value="1" id="k3" "><label for="k3" class="checkbox-form"></label>
+					eeeee
+				</div>
+
+			</div>
+		</div>
+
+  		<!-- Scripts -->
+
+  	</body>
+</html>
+
+
+
+
+
+
+
+
