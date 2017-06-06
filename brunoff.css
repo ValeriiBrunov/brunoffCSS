@@ -45,8 +45,8 @@ table {
 /* Шрифты */
 @font-face {
   font-family: 'Glyphicons Halflings';
-  src: url('fonts/glyphicons-halflings-regular.eot');
-  src: url('fonts/glyphicons-halflings-regular.eot?#iefix') format('embedded-opentype'), url('fonts/glyphicons-halflings-regular.woff') format('woff'), url('fonts/glyphicons-halflings-regular.ttf') format('truetype'), url('fonts/glyphicons-halflings-regular.svg#glyphicons_halflingsregular') format('svg');
+  src: url('../fonts/glyphicons-halflings-regular.eot');
+  src: url('../fonts/glyphicons-halflings-regular.eot?#iefix') format('embedded-opentype'), url('../fonts/glyphicons-halflings-regular.woff') format('woff'), url('../fonts/glyphicons-halflings-regular.ttf') format('truetype'), url('../fonts/glyphicons-halflings-regular.svg#glyphicons_halflingsregular') format('svg');
 }
 .glyphicon {
   position: relative;
@@ -811,22 +811,36 @@ div, span {
 	float: right;
 }
 
-/* Позиционирование блочных в строке элементов. */
+/**
+ * Позиционирование блочных элементов в строке.
+ * Применяется, когда надо выровнять блочные элементы разной высоты.
+ */
 li.inline-block-top {
   display: inline-block;
-    list-style: none;
-    vertical-align: top;
+  list-style: none;
+  vertical-align: top;
 }
 li.inline-block-middle {
   display: inline-block;
-    list-style: none;
-    vertical-align: middle;
+  list-style: none;
+  vertical-align: middle;
 }
 li.inline-block-bottom {
   display: inline-block;
-    list-style: none;
-    vertical-align: bottom;
+  list-style: none;
+  vertical-align: bottom;
 }
+
+/* Верстка по типу таблицы. */
+.table    { display: table; }
+.tr       { display: table-row; }
+.thead    { display: table-header-group; }
+.tbody    { display: table-row-group; }
+.tfoot    { display: table-footer-group; }
+.col      { display: table-column; }
+.colgroup { display: table-column-group; }
+.td, .th  { display: table-cell; }
+.caption  { display: table-caption; }
 
 /**
  *
@@ -884,7 +898,7 @@ select:focus {
 }
 /* Горизонтальное расположение текста и формы. */
 ul.vertical-form {
-  margin: 5px;
+  margin: 14px;
 }
 ul.vertical-form li {
   margin-bottom: 3px;
@@ -958,7 +972,7 @@ input[type="radio"] {
 }
 /* Чекбоксы. */
 .checkbox-form {
-  width: 28px;
+  width: 26px;
   height: 16px;
   display: block;
   background-image: url(data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAABIAAAAgCAYAAAAffCjxAAAABHNCSVQICAgIfAhkiAAAAAlwSFlzAAAOxAAADsQBlSsOGwAAAmVJREFUSImtlc9LVFEUxz/3vRlJiaFczaaF46Rj46JGgygNAgliIFpFSVE7oU3SQvoDBBci9B+0cRMhQxGau5qpIZRHEMwisEeOCK/NkBpq5nu3xfie77cjeOHOnPfOvZ/7PeeeOSOklJITGAnbKJVKVCoVjsPN5XKMjY15QZqmkUqlyGazLUEMw6BWqwUVAaTTaYrFovMspUQIEQqqVqvU63XnWYk71Ya0Em4syA88NshWIKX0TL86t53AN9x58Svx58xtBxTFhRHnC1Xk32wriUt6qKKok+N8AUXuTWEK3b5YUFRoUdAASAiBYRjMz89HLnYPwzDCQYVCgUqlgqZpLYEA8vm8Y4uTaiMt/URaGU5od969ZmH9J63KSwjB076LTA2PeBW9XdPZsyz+BaYZ8s5ixzSZ1b87YAcUrSRYM6dUFQDLld6jc+S7i4eZXl5dv0Uq2eZ5fzTIVcX3us4zPTjEr91t9iwzAnRwsmpvtJUcfD/qzjEzOMzc6grjS2V2zSiQEKTbO3h5bYSu0ymc3AjB/a4epgpXeb++yrPlT2zv7weEe0LrUBP0pM5QulHkwtlOAB539/Hi8jBzqz948uUDf30hhYL0rQ1Gy4tYUjI7dJPn/QNMXrpCqa4zoX1uQiSE3bE32UKg/9nk7scF9iyTif4B3qzpjC+V2THtcMILxddGmotWNn8zWl5kNNPLTO0ru5YZCYgAHa7XtzaY/LbcvDXnJqNBTmjC/hTCW8xOHQV9Sti/yO1zGdoUhaSikFRUkqp6YPtn09euqjzI9B6e12g0nJbk7tP+nh3l6+xslsl/wicUuuW4+h4AAAAASUVORK5CYII=);
@@ -971,6 +985,22 @@ input[type="checkbox"]:checked + label {
 }
 input[type="checkbox"] {
   display:none;
+}
+
+/* Кнопки */
+button {
+  color: #000;
+  background: rgb(212,75,56);
+  padding: 5px;
+  outline: none;
+  font-size: 16px;
+  border: 1px solid green;
+}
+button:hover {
+  background: rgb(232,95,76);
+}
+button:active {
+  background: rgb(152,15,0);
 }
 
 /* Для ширины окна 850 px и более. */
