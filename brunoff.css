@@ -815,17 +815,26 @@ div, span {
  * Позиционирование блочных элементов в строке.
  * Применяется, когда надо выровнять блочные элементы разной высоты.
  */
-li.inline-block-top {
+li.inline-block-top,
+div.inline-block-top,
+span.inline-block-top,
+img.inline-block-top {
   display: inline-block;
   list-style: none;
   vertical-align: top;
 }
-li.inline-block-middle {
+li.inline-block-middle,
+div.inline-block-middle,
+span.inline-block-middle,
+img.inline-block-middle {
   display: inline-block;
   list-style: none;
   vertical-align: middle;
 }
-li.inline-block-bottom {
+li.inline-block-bottom,
+div.inline-block-bottom,
+span.inline-block-bottom,
+img.inline-block-bottom {
   display: inline-block;
   list-style: none;
   vertical-align: bottom;
@@ -905,7 +914,7 @@ ul.vertical-form li {
 }
 li.label {
   margin-bottom: 0px;
-  font-size: 10px;
+  font-size: 12px;
 }
 /* Текст с выделением внутри формы. */
 input[type="text"].figures-form:disabled {
@@ -996,12 +1005,12 @@ button {
   font-size: 16px;
   border: 1px solid green;
 }
-button:hover {
-  background: rgb(232,95,76);
-}
-button:active {
-  background: rgb(152,15,0);
-}
+button:hover { background: rgb(232,95,76); }
+button:active { background: rgb(152,15,0); }
+
+/* Отображение ошибок формы. */
+.error { color: red; }
+.confirm { color: green; }
 
 /* Для ширины окна 850 px и более. */
 @media (min-width: 850px) {
