@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html>
+  	<head>
+
+  		<!-- Meta -->
+	    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+	    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0" />
+
+        <!-- Title -->
+	    <title>Интернет аукцион brubay.ru</title>
+
+	    <!-- Link -->
+	    <link href="brunoff.css" type="text/css" rel="stylesheet" media="screen,projection" />
+
+  	</head>
+  	<body>
+
+<style type="text/css">
+
+    body { background-color: #BFBFBF; }
+    
+    @-ms-keyframes rotation {/* Правое вращение. */
+        from { -ms-transform: rotate(0deg); }
+        to { -ms-transform: rotate(360deg); }
+    }
+    @-moz-keyframes rotation {
+        from { -moz-transform: rotate(0deg); }
+        to { -moz-transform: rotate(360deg); }
+    }
+    @-webkit-keyframes rotation {
+        from { -webkit-transform: rotate(0deg); }
+        to { -webkit-transform: rotate(360deg); }
+    }
+    @keyframes rotation {
+        from { transform: rotate(0deg); }
+        to { transform: rotate(360deg); }
+    }
+    @-ms-keyframes rotation-left {/* Левое вращение. */
+        from { -ms-transform: rotate(360deg); }
+        to { -ms-transform: rotate(0deg); }
+    }
+    @-moz-keyframes rotation-left {
+        from { -moz-transform: rotate(360deg); }
+        to { -moz-transform: rotate(0deg); }
+    }
+    @-webkit-keyframes rotation-left {
+        from { -webkit-transform: rotate(360deg); }
+        to { -webkit-transform: rotate(0deg); }
+    }
+    @keyframes rotation-left {
+        from { transform: rotate(360deg); }
+        to { transform: rotate(0deg); }
+    }
+    div.preloader-animation {
+        -webkit-animation-name: rotation;
+        -webkit-animation-duration: 1s;
+        -webkit-animation-iteration-count: infinite;
+        -webkit-animation-timing-function: linear;
+        -moz-animation-name: rotation;
+        -moz-animation-duration: 1s;
+        -moz-animation-iteration-count: infinite;
+        -moz-animation-timing-function: linear;
+        -ms-animation-name: rotation;
+        -ms-animation-duration: 1s;
+        -ms-animation-iteration-count: infinite;
+        -ms-animation-timing-function: linear;
+        animation-name: rotation;
+        animation-duration: 1s;
+        animation-iteration-count: infinite;
+        animation-timing-function: linear;
+    }
+    div.preloader-animation-left {
+        -webkit-animation-name: rotation-left;
+        -moz-animation-name: rotation-left;
+        -ms-animation-name: rotation-left;
+        animation-name: rotation-left;
+    }
+    div.shell-preloader-100 {
+        width: 100px;
+        height: 100px;
+    }
+    div.shell-preloader-100 .oblast-preloader {
+        width: 50px;/* В два раза меньше .shell-preloader */
+        height: 50px;
+        box-sizing: border-box;
+    }
+    div.shell-preloader-100 .circle-1-preloader {
+        border-left: 3px solid green;
+        border-top: 3px solid green;
+        border-radius: 50px 0px 0px 0px;
+    }
+    div.shell-preloader-100 .circle-2-preloader {
+        border-right: 3px solid green;
+        border-top: 3px solid green;
+        border-radius: 0px 50px 0px 0px;
+    }
+    div.shell-preloader-100 .circle-3-preloader {
+        border-left: 3px solid green;
+        border-bottom: 3px solid green;
+        border-radius: 0px 0px 0px 50px;
+    }
+    div.shell-preloader-100 .circle-4-preloader {
+        border-right: 3px solid green;
+        border-bottom: 3px solid green;
+        border-radius: 0px 0px 50px 0px;
+    }
+    div.shell-preloader-100 .cut-1 {
+        clip: rect(0px, 40px, 50px, 0px);
+        clip: rect(0px 40px 50px 0px);/* IE4 to IE7 */
+    }
+    div.shell-preloader-100 .cut-2 {
+        clip: rect(0px, 100px, 50px, 60px);
+        clip: rect(0px 100px 50px 60px);/* IE4 to IE7 */
+    }
+    div.shell-preloader-50 {
+        width: 50px;
+        height: 50px;
+    }
+    div.shell-preloader-50 .oblast-preloader {
+        width: 25px;/* В два раза меньше .shell-preloader */
+        height: 25px;
+        box-sizing: border-box;
+    }
+    div.shell-preloader-50 .circle-1-preloader {
+        border-left: 3px solid green;
+        border-top: 3px solid green;
+        border-radius: 25px 0px 0px 0px;
+    }
+    div.shell-preloader-50 .circle-2-preloader {
+        border-right: 3px solid green;
+        border-top: 3px solid green;
+        border-radius: 0px 25px 0px 0px;
+    }
+    div.shell-preloader-50 .circle-3-preloader {
+        border-left: 3px solid green;
+        border-bottom: 3px solid green;
+        border-radius: 0px 0px 0px 25px;
+    }
+    div.shell-preloader-50 .circle-4-preloader {
+        border-right: 3px solid green;
+        border-bottom: 3px solid green;
+        border-radius: 0px 0px 25px 0px;
+    }
+    div.shell-preloader-50 .cut-1 {
+        clip: rect(0px, 15px, 25px, 0px);
+        clip: rect(0px 15px 25px 0px);/* IE4 to IE7 */
+    }
+    div.shell-preloader-50 .cut-2 {
+        clip: rect(0px, 50px, 25px, 15px);
+        clip: rect(0px 50px 25px 15px);/* IE4 to IE7 */
+    }
+    div.versatile { overflow: hidden; }
+
+</style>
+
+        <p>100x100</p>
+        <div class="shell-preloader-100 preloader-animation">
+            <div class="abs vertical cut-1">
+                <div class="vertical-top">
+                    <div class="vertical-left oblast-preloader circle-1-preloader"></div>
+                </div>
+            </div>
+            <div class="abs vertical cut-2">
+                <div class="vertical-top">
+                    <div class="vertical-right oblast-preloader circle-2-preloader"></div>
+                </div>
+            </div>
+            <div class="abs vertical">
+                <div class="vertical-bottom">
+                    <div class="vertical-left oblast-preloader circle-3-preloader"></div>
+                </div>
+            </div>
+            <div class="abs vertical">
+                <div class="vertical-bottom">
+                    <div class="vertical-right oblast-preloader circle-4-preloader"></div>
+                </div>
+            </div>
+        </div>
+
+        <p>50x50</p>
+        <div class="shell-preloader-50 preloader-animation">
+            <div class="abs vertical cut-1">
+                <div class="vertical-top">
+                    <div class="vertical-left oblast-preloader circle-1-preloader"></div>
+                </div>
+            </div>
+            <div class="abs vertical cut-2">
+                <div class="vertical-top">
+                    <div class="vertical-right oblast-preloader circle-2-preloader"></div>
+                </div>
+            </div>
+            <div class="abs vertical">
+                <div class="vertical-bottom">
+                    <div class="vertical-left oblast-preloader circle-3-preloader"></div>
+                </div>
+            </div>
+            <div class="abs vertical">
+                <div class="vertical-bottom">
+                    <div class="vertical-right oblast-preloader circle-4-preloader"></div>
+                </div>
+            </div>
+        </div>
+
+        <p>100x100 разносторонний</p>
+        <div class="shell-preloader-100 versatile">
+            <!-- Внешний -->
+            <div class="shell-preloader-100 preloader-animation">
+                <div class="abs vertical">
+                    <div class="vertical-top">
+                        <div class="vertical-left oblast-preloader circle-1-preloader"></div>
+                    </div>
+                </div>
+                <div class="abs vertical">
+                    <div class="vertical-bottom">
+                        <div class="vertical-right oblast-preloader circle-4-preloader"></div>
+                    </div>
+                </div>
+            </div>
+            <!-- Внутренний -->
+            <div class="shell-preloader-50 preloader-animation preloader-animation-left" style="margin-top: -75px; margin-left: 25px;">
+                <div class="abs vertical cut-2">
+                    <div class="vertical-top">
+                        <div class="vertical-right oblast-preloader circle-2-preloader"></div>
+                    </div>
+                </div>
+                <div class="abs vertical">
+                    <div class="vertical-bottom">
+                        <div class="vertical-left oblast-preloader circle-3-preloader"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+  	</body>
+</html>
